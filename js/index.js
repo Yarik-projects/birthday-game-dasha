@@ -97,206 +97,206 @@ const followingChapter = () => {
 const pressBtn = btnStartWay.addEventListener("click", () => {
   btnStartWay.classList.add("opacity");
   wait(1.2)
-    .then(() => {
-      btnStartWay.style.display = "none";
-      return wait(1.5);
-    })
-    .then(() => {
-      // Первая запись 7с
-      hello1.play();
-      return wait(8);
-    })
-    .then(() => {
-      // Вторая запись 9с
-      hello2.play();
-      return wait(9.5);
-    })
-    .then(() => {
-      // Третья запись 10с
-      hello3.play();
-      return wait(10);
-    })
-    .then(() => {
-      hello4.play();
-      return wait(7.9);
-    })
-    .then(() => {
-      hello5.play();
-      return wait(5.9);
-    })
-    .then(() => {
-      hello6.play();
-      return wait(10.5);
-    })
-    .then(() => {
-      hello7.play();
-      return wait(5.5);
-    })
-    .then(() => {
-      page.insertAdjacentHTML("beforeend", html);
-      return wait(1);
-    })
-    .then(() => {
-      document.querySelector(".form").classList.add("display-show");
-      let input = document.querySelector("#input");
-      input.addEventListener("change", (event) => {
-        if (event.target.value === "الدولارات") {
-          mystery1.play();
-          event.target.value = "";
-          input.setAttribute("readonly", "readonly");
-          wait(5.5).then(() => {
-            mystery2.play();
-            input.removeAttribute("readonly", "readonly");
-            document
-              .querySelector("#input")
-              .addEventListener("change", (event) => {
-                if (event.target.value === "20.05.2023") {
-                  mystery3.play();
-                  event.target.value = "";
-                  return wait(3.9)
-                    .then(() => {
-                      newMystery1.play();
-                      document
-                        .querySelector(".form")
-                        .classList.remove("display-show");
-                      return wait(7);
-                    })
-                    .then(() => {
-                      document.querySelector(".form").style.display = "none";
-                      page.insertAdjacentHTML("beforeend", btn);
-                      return wait(1);
-                    })
-                    .then(() => {
-                      let btnReady = document.querySelector(".btn-ready");
-                      btnReady.classList.add("display-show");
-                      return btnReady.addEventListener("mousemove", none);
-                    })
-                    .then(() => {
-                      document.addEventListener("keypress", (event) => {
-                        if (event.code === "NumpadAdd") {
-                          document
-                            .querySelector(".btn-ready")
-                            .classList.remove("display-none");
-                          let btnReady = document.querySelector(".btn-ready");
-                          btnReady.removeEventListener("mousemove", none);
-                        }
-                      });
-                    })
-                    .then(() => {
-                      let btnReady = document.querySelector(".btn-ready");
-                      btnReady.addEventListener("click", () => {
-                        // let btnReady = document.querySelector(".btn-ready");
-                        btnReady.classList.remove("display-show");
-                        newMystery2.play();
-                        document.querySelector(".form").style.display = "block";
-                        return wait(3).then(() => {
-                          btnReady.classList.add('display-none')
-                          followingChapter();
-                          return wait(1).then(() => {
-                            let input = document.querySelector("#input");
-                            input.addEventListener("change", (event) => {
-                              if (event.target.value === "24") {
-                                newMystery3.play();
-                                return wait(6).then(() => {
-                                  document
-                                    .querySelector(".form")
-                                    .classList.remove("display-show");
-                                  endNewMystery1.play();
-                                  wait(9).then(() => {
-                                    document.querySelector(
-                                      ".form"
-                                    ).style.display = "none";
-                                    endNewMystery2.play();
-                                    wait(7).then(() => {
-                                      for (let i of callSese) {
-                                        i.classList.remove("opacity");
-                                        i.style.left = `${random(0, 90)}%`;
-                                        i.style.top = `${random(0, 90)}%`;
+//     .then(() => {
+//       btnStartWay.style.display = "none";
+//       return wait(1.5);
+//     })
+//     .then(() => {
+//       // Первая запись 7с
+//       hello1.play();
+//       return wait(8);
+//     })
+//     .then(() => {
+//       // Вторая запись 9с
+//       hello2.play();
+//       return wait(9.5);
+//     })
+//     .then(() => {
+//       // Третья запись 10с
+//       hello3.play();
+//       return wait(10);
+//     })
+//     .then(() => {
+//       hello4.play();
+//       return wait(7.9);
+//     })
+//     .then(() => {
+//       hello5.play();
+//       return wait(5.9);
+//     })
+//     .then(() => {
+//       hello6.play();
+//       return wait(10.5);
+//     })
+//     .then(() => {
+//       hello7.play();
+//       return wait(5.5);
+//     })
+//     .then(() => {
+//       page.insertAdjacentHTML("beforeend", html);
+//       return wait(1);
+//     })
+//     .then(() => {
+//       document.querySelector(".form").classList.add("display-show");
+//       let input = document.querySelector("#input");
+//       input.addEventListener("change", (event) => {
+//         if (event.target.value === "الدولارات") {
+//           mystery1.play();
+//           event.target.value = "";
+//           input.setAttribute("readonly", "readonly");
+//           wait(5.5).then(() => {
+//             mystery2.play();
+//             input.removeAttribute("readonly", "readonly");
+//             document
+//               .querySelector("#input")
+//               .addEventListener("change", (event) => {
+//                 if (event.target.value === "20.05.2023") {
+//                   mystery3.play();
+//                   event.target.value = "";
+//                   return wait(3.9)
+//                     .then(() => {
+//                       newMystery1.play();
+//                       document
+//                         .querySelector(".form")
+//                         .classList.remove("display-show");
+//                       return wait(7);
+//                     })
+//                     .then(() => {
+//                       document.querySelector(".form").style.display = "none";
+//                       page.insertAdjacentHTML("beforeend", btn);
+//                       return wait(1);
+//                     })
+//                     .then(() => {
+//                       let btnReady = document.querySelector(".btn-ready");
+//                       btnReady.classList.add("display-show");
+//                       return btnReady.addEventListener("mousemove", none);
+//                     })
+//                     .then(() => {
+//                       document.addEventListener("keypress", (event) => {
+//                         if (event.code === "NumpadAdd") {
+//                           document
+//                             .querySelector(".btn-ready")
+//                             .classList.remove("display-none");
+//                           let btnReady = document.querySelector(".btn-ready");
+//                           btnReady.removeEventListener("mousemove", none);
+//                         }
+//                       });
+//                     })
+//                     .then(() => {
+//                       let btnReady = document.querySelector(".btn-ready");
+//                       btnReady.addEventListener("click", () => {
+//                         // let btnReady = document.querySelector(".btn-ready");
+//                         btnReady.classList.remove("display-show");
+//                         newMystery2.play();
+//                         document.querySelector(".form").style.display = "block";
+//                         return wait(3).then(() => {
+//                           btnReady.classList.add('display-none')
+//                           followingChapter();
+//                           return wait(1).then(() => {
+//                             let input = document.querySelector("#input");
+//                             input.addEventListener("change", (event) => {
+//                               if (event.target.value === "24") {
+//                                 newMystery3.play();
+//                                 return wait(6).then(() => {
+//                                   document
+//                                     .querySelector(".form")
+//                                     .classList.remove("display-show");
+//                                   endNewMystery1.play();
+//                                   wait(9).then(() => {
+//                                     document.querySelector(
+//                                       ".form"
+//                                     ).style.display = "none";
+//                                     endNewMystery2.play();
+//                                     wait(7).then(() => {
+//                                       for (let i of callSese) {
+//                                         i.classList.remove("opacity");
+//                                         i.style.left = `${random(0, 90)}%`;
+//                                         i.style.top = `${random(0, 90)}%`;
 
-                                        i.addEventListener("click", () => {
-                                          count = count + 1;
-                                          i.classList.add('opacity')
-                                          console.log(count);
-                                          if (count === 10) {
-                                            for (let i of callSese)
-                                              i.classList.add("opacity");
-                                            wait(0.5).then(() => {
-                                              sese1.play();
-                                              wait(8).then(() => {
-                                                const blockSese =
-                                                  document.querySelector(
-                                                    ".call-sese"
-                                                  );
-                                                blockSese.classList.add(
-                                                  "display-none"
-                                                );
-                                                sese2.play();
-                                                wait(8).then(() => {
-                                                  sese3.play();
-                                                  wait(1.5).then(() => {
-                                                    const alreadyForm =
-                                                      document.querySelector(
-                                                        ".form-two"
-                                                      );
-                                                    alreadyForm.classList.remove(
-                                                      "opacity"
-                                                    );
-                                                    const alreadyBtn =
-                                                      document.querySelector(
-                                                        ".already-btn"
-                                                      );
-                                                    alreadyBtn.addEventListener(
-                                                      "click",
-                                                      () => {
-                                                        const formTwo =
-                                                          document.querySelector(
-                                                            "#input-two"
-                                                          );
-                                                        if (
-                                                          formTwo.value ===
-                                                          "ziba 7.6"
-                                                        ) {
-                                                          sese5.play();
-                                                          formTwo.value = "";
-                                                        } else if (
-                                                          formTwo.value ===
-                                                          "ziba 7.5"
-                                                        ) {
-                                                          sese6.play();
-                                                          return wait(8.5).then(
-                                                            () => {
-                                                              alreadyBtn.classList.add(
-                                                                "opacity"
-                                                              );
-                                                              alreadyForm.classList.add(
-                                                                "opacity"
-                                                              );
-                                                              const yesOrNo =
-                                                                document.querySelector(
-                                                                  ".yes-or-no"
-                                                                );
-                                                              yesOrNo.classList.remove(
-                                                                "opacity"
-                                                              );
-                                                              const btnNo =
-                                                                document.querySelector(
-                                                                  ".btn-no"
-                                                                );
-                                                              const btnYes =
-                                                                document.querySelector(
-                                                                  ".btn-yes"
-                                                                );
-                                                              btnNo.addEventListener(
-                                                                "click",
-                                                                () => {
-                                                                  sese_cancel.play();
-                                                                }
-                                                              );
+//                                         i.addEventListener("click", () => {
+//                                           count = count + 1;
+//                                           i.classList.add('opacity')
+//                                           console.log(count);
+//                                           if (count === 10) {
+//                                             for (let i of callSese)
+//                                               i.classList.add("opacity");
+//                                             wait(0.5).then(() => {
+//                                               sese1.play();
+//                                               wait(8).then(() => {
+//                                                 const blockSese =
+//                                                   document.querySelector(
+//                                                     ".call-sese"
+//                                                   );
+//                                                 blockSese.classList.add(
+//                                                   "display-none"
+//                                                 );
+//                                                 sese2.play();
+//                                                 wait(8).then(() => {
+//                                                   sese3.play();
+//                                                   wait(1.5).then(() => {
+//                                                     const alreadyForm =
+//                                                       document.querySelector(
+//                                                         ".form-two"
+//                                                       );
+//                                                     alreadyForm.classList.remove(
+//                                                       "opacity"
+//                                                     );
+//                                                     const alreadyBtn =
+//                                                       document.querySelector(
+//                                                         ".already-btn"
+//                                                       );
+//                                                     alreadyBtn.addEventListener(
+//                                                       "click",
+//                                                       () => {
+//                                                         const formTwo =
+//                                                           document.querySelector(
+//                                                             "#input-two"
+//                                                           );
+//                                                         if (
+//                                                           formTwo.value ===
+//                                                           "ziba 7.6"
+//                                                         ) {
+//                                                           sese5.play();
+//                                                           formTwo.value = "";
+//                                                         } else if (
+//                                                           formTwo.value ===
+//                                                           "ziba 7.5"
+//                                                         ) {
+//                                                           sese6.play();
+//                                                           return wait(8.5).then(
+//                                                             () => {
+//                                                               alreadyBtn.classList.add(
+//                                                                 "opacity"
+//                                                               );
+//                                                               alreadyForm.classList.add(
+//                                                                 "opacity"
+//                                                               );
+//                                                               const yesOrNo =
+//                                                                 document.querySelector(
+//                                                                   ".yes-or-no"
+//                                                                 );
+//                                                               yesOrNo.classList.remove(
+//                                                                 "opacity"
+//                                                               );
+//                                                               const btnNo =
+//                                                                 document.querySelector(
+//                                                                   ".btn-no"
+//                                                                 );
+//                                                               const btnYes =
+//                                                                 document.querySelector(
+//                                                                   ".btn-yes"
+//                                                                 );
+//                                                               btnNo.addEventListener(
+//                                                                 "click",
+//                                                                 () => {
+//                                                                   sese_cancel.play();
+//                                                                 }
+//                                                               );
 
-                                                              btnYes.addEventListener(
-                                                                "click",
-                                                                () => {
-                                                                  sese7.play();
+//                                                               btnYes.addEventListener(
+//                                                                 "click",
+//                                                                 () => {
+                                                                  // sese7.play();
                                                                   wait(3).then(
                                                                     () => {
                                                                       yesOrNo.classList.add(
@@ -304,40 +304,40 @@ const pressBtn = btnStartWay.addEventListener("click", () => {
                                                                       );
                                                                       lastChapter();
                                                                     }
-                                                                   );
-                                                                }
-                                                              );
-                                                            }
-                                                          );
-                                                        } else {
-                                                          sese4.play();
-                                                          formTwo.value = "";
-                                                        }
-                                                      }
-                                                    );
-                                                  });
-                                                });
-                                              });
-                                            });
-                                          }
-                                        });
-                                      }
-                                    });
-                                  });
-                                });
-                              }
-                            });
-                          });
-                        });
-                      });
-                    });
-                }
-              });
-          });
-        }
-      });
-    });
- });
+                                                                   )});
+                                                                // }
+//                                                               );
+//                                                             }
+//                                                           );
+//                                                         } else {
+//                                                           sese4.play();
+//                                                           formTwo.value = "";
+//                                                         }
+//                                                       }
+//                                                     );
+//                                                   });
+//                                                 });
+//                                               });
+//                                             });
+//                                           }
+//                                         });
+//                                       }
+//                                     });
+//                                   });
+//                                 });
+//                               }
+//                             });
+//                           });
+//                         });
+//                       });
+//                     });
+//                 }
+//               });
+//           });
+//         }
+//       });
+//     });
+//  });
 
 function flick() {
   lamp.classList.add("lamp-light");
@@ -437,6 +437,7 @@ const lastChapter = () => {
               broke5.play();
               formThree.style.left = `${3}%`;
               wait(2).then(() => {
+                // Повление формы для исправления кода
                 clue.classList.remove("opacity");
                 formFour.classList.remove("opacity");
                 gear.classList.remove("opacity");
@@ -445,7 +446,7 @@ const lastChapter = () => {
             })
             .then(() => {
               broke6.play();
-
+              clue.classList.remove('pointer-events-none')
               clue.addEventListener("click", () => {
                 clueSound.play();
                 wait(5.2).then(() => {
@@ -512,6 +513,7 @@ for(let i; i <= 10; i++) {
 
 const taskSolution = new Audio("sounds3/решение1.mp3");
 const newTask10 = new Audio('sounds3/новое_задание1.mp3')
+const leftBar = document.querySelector(".selector");
 
 const chapterThree = () => {
   repeatTask();
@@ -519,7 +521,6 @@ const chapterThree = () => {
     const btnRepeat = document.querySelector(".btn-repeat");
     btnRepeat.classList.remove("opacity");
     btnRepeat.addEventListener("click", () => {
-      const leftBar = document.querySelector(".selector");
       leftBar.classList.toggle("left-bar-move");
       btnRepeat.classList.toggle("change-color");
       const span = document.querySelectorAll(".selector span");
@@ -544,6 +545,7 @@ const chapterThree = () => {
     btnThree.addEventListener("click", () => {
       if (inputThree.value === "кения" || inputThree.value === "Кения") {
         btnRepeat.classList.add('opacity')
+        leftBar.classList.remove('left-bar-move')
         inputThree.value = '';
         taskSolution.play();
         wait(8.5).then(() => {
